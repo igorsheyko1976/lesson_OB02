@@ -2,7 +2,7 @@ class User:
     def __init__(self, user_id, name, access_level='user'):
         self._user_id = user_id
         self._name = name
-        self._access_level = access_level
+        self.__access_level = access_level
 
     def get_user_id(self):
         return self._user_id
@@ -11,7 +11,7 @@ class User:
         return self._name
 
     def get_access_level(self):
-        return self._access_level
+        return self.__access_level
 
 
 class Admin(User):
@@ -32,7 +32,7 @@ class Admin(User):
     def get_admin_name(self):
         return self.get_name()
 
-# ТЕСТ
+# ТЕСТ:
 
 user1 = User(1, "Маша")
 user2 = User(2, "Саша")
