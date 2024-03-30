@@ -37,7 +37,7 @@ class Admin(User):
 user1 = User(1, "Маша")
 user2 = User(2, "Саша")
 user3 = User(3, "Даша")
-admin = Admin(3, "Игорь Валерьевич")
+admin = Admin(4, "Игорь Валерьевич")
 
 admin.add_user(user1)
 admin.add_user(user2)
